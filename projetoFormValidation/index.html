@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Formulário </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title"> Sign in! </h2>
+        </div>
+
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label for="username"> Nome de Usuário </label>
+                <input type="text" id="user" placeholder="Dígite o nome de usuário...">
+                <small> </small> <!-- Mensagem de Erro -->
+            </div>
+
+            <div class="form-control">
+                <label for="mail"> E-mail </label>
+                <input type="email" id="mail" placeholder="Exemple@gmail.com">
+                <small> </small>  <!-- Mensagem de Erro -->
+            </div>
+
+            <div class="form-control">
+                <label for="password"> Senha </label>
+                <input type="password" id="password" placeholder="Dígite sua senha...">
+                <small>  </small> <!-- Mensagem de Erro -->
+            </div>
+
+            <div class="form-control">
+                <label for="confirmPass"> Confirmação de Senha </label>
+                <input type="password" id="confirmPass" placeholder="Confirme sua senha...">
+                <small>  </small> <!-- Mensagem de Erro -->
+            </div>
+
+            <button type="submit"> Enviar </button>
+        </form>
+    </div>
+
+    <script src="./controller/app.js"></script>
+</body>
+
+</html>

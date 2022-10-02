@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box; /* Para a 'margin' e 'padding' não interferir na largura dos elementos.*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+i img {
+    width: 15px;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #00db 0%, rgb(99, 167, 204) 100%); /* Efeito gradiente*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    max-width: 100%;
+    overflow: hidden; /* Corta o conteúdo que ultrapassa o tamanho da 'DIV' */
+}
+
+.header {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form {
+    padding: 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-control input {
+    border: 2px solid #eee;
+    display: block;
+    border-radius: 10px;
+    font-size: 13px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.form-control i {
+    position: absolute;
+    top: 47px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(99, 167, 204) 0%, rgba(0, 0, 253, 0.733) 100%); /* Inserindo um background com efeitp gradiente*/
+    border: none;
+    color: #eee;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+/* Error & Success - Estilização do 'input' e 'icones', caso os dados estejam corretos ou errados (Válidação realizada com Js.) */
+
+/* Input */
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+/* Icon */
+.form-control i .iconSuccess {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control i .iconError {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+/* Msg Error */
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
